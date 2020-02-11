@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Flag Quiz</string>
+    <string name="answer_one">Canada</string>
+    <string name="answer_two">Germany</string>
+    <string name="answer_three">France</string>
+    <string name="answer_four">Ontario</string>
+    <string name="points_label">Points:</string>
+    <string name="points_value">0</string>
+    <string name="flag_label">Flag</string>
+</resources>

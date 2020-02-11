@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FlagQuiz">
+
+    <ImageView
+        android:id="@+id/flag"
+        android:layout_width="561dp"
+        android:layout_height="273dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="116dp"
+        android:contentDescription="@string/flag_label"
+        android:src="@drawable/canada"
+        app:layout_constraintBottom_toTopOf="@+id/answerOne"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="701dp"
+        android:layout_height="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/answerOne"
+        android:layout_width="577dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/answer_one"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flag" />
+
+    <Button
+        android:id="@+id/answerTwo"
+        android:layout_width="577dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/answer_two"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answerOne" />
+
+    <Button
+        android:id="@+id/answerThree"
+        android:layout_width="577dp"
+        android:layout_height="66dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/answer_three"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answerTwo" />
+
+    <Button
+        android:id="@+id/answerFour"
+        android:layout_width="577dp"
+        android:layout_height="66dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/answer_four"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answerThree"
+        app:layout_constraintVertical_bias="0.612" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="117dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="22dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginStart="200dp"
+        android:text="@string/points_label"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/flag"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/pointsValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:text="@string/points_value"
+        android:textSize="36sp"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+</android.support.constraint.ConstraintLayout>
